@@ -1,0 +1,26 @@
+GET http://localhost:300/subscribers
+
+###
+Get http://localhost:300/subscribers/60d19159838e2905f1708caf
+
+###
+Post http://localhost:300/subscribers
+Content-Type: application/json
+
+{
+    "name":"Tafhim Hasan",
+    "subscribedTochannel":"DevWise"
+}
+
+
+###
+DELETE http://localhost:300/subscribers/60d1f1f17a57b40b5189e160
+
+###
+PATCH http://localhost:300/subscribers/60d1f77b88c6600bccc6da89
+Content-Type: application/json
+
+{
+    "name":"New Tafhim Hasan",
+    "subscribedTochannel":"New DevWise"
+}
