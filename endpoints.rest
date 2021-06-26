@@ -1,26 +1,25 @@
-GET http://localhost:300/subscribers
+GET http://localhost:500/users
 
 ###
-Get http://localhost:300/subscribers/60d19159838e2905f1708caf
+Get http://localhost:500/users/60d687242c004d145f233292
 
 ###
-Post http://localhost:300/subscribers
+Post http://localhost:500/users
 Content-Type: application/json
 
 {
     "name":"Tafhim Hasan",
-    "subscribedTochannel":"DevWise"
+    "email":"tafhim@gmail.com"
 }
 
-
 ###
-DELETE http://localhost:300/subscribers/60d1f1f17a57b40b5189e160
-
-###
-PATCH http://localhost:300/subscribers/60d1f77b88c6600bccc6da89
+PATCH http://localhost:500/users/60d68c72a7868f150070d8cf
 Content-Type: application/json
 
 {
     "name":"New Tafhim Hasan",
-    "subscribedTochannel":"New DevWise"
+    "email":"neweamil@gmail.com"
 }
+
+###
+DELETE http://localhost:500/users/60d68c72a7868f150070d8cf
